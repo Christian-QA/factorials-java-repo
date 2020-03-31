@@ -2,13 +2,20 @@ package main;
 
 public class Factorials {
 
-	public static int factorialStarter(int num1) {
+	public static String factorialStarter(int num1) {
 
-		int sum1 = 1;
-		for (int i = 1; i <= num1; i++) {
-			sum1 *= i;
+		int i = 1;
+		while (true) {
+			if (num1 < i) {
+				return "NONE";
+			} else if (num1 == i) {
+				break;
+			}
+			num1 /= i;
+			i++;
 		}
-		return sum1;
+		String result = Integer.toString(i) + "!";
+		return result;
 	}
 
 }

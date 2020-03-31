@@ -9,8 +9,11 @@ public class FactorialsTest {
 	@Test
 	public void test() {
 
-		assertEquals(24, Factorials.factorialStarter(4));
-		assertEquals(120, Factorials.factorialStarter(5));
+		assertEquals("10!", Factorials.factorialStarter(3628800));
+		assertEquals("12!", Factorials.factorialStarter(479001600));
+
+		assertEquals("3!", Factorials.factorialStarter(6));
+		assertEquals("NONE", Factorials.factorialStarter(18));
 	}
 
 }
